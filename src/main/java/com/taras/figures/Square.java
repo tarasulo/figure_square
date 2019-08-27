@@ -1,9 +1,13 @@
 package com.taras.figures;
 
 public class Square implements Figures {
-    public double width = 5.0;
+    public double width;
 
-   public double getSquare() {
+    public Square(double width) {
+        this.width = width;
+    }
+
+    public double getSquare() {
         return width * width;
     }
 

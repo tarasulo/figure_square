@@ -1,10 +1,15 @@
 package com.taras.figures;
 
 public class Rectangle implements Figures{
-    public double width = 2.0;
-    public double height = 3.2;
+    public double width;
+    public double height;
 
-   public double getSquare() {
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public double getSquare() {
         return width * height;
     }
 
