@@ -1,22 +1,14 @@
 package com.taras.figures;
 
 public class Rectangle implements Figures{
-    public double width;
-    public double height;
+    public double width = 2.0;
+    public double height = 3.2;
 
    public double getSquare() {
-        return 0;
-    }
-
-    public double getPerimeter() {
-        return 0;
-    }
-
-   public double getSquare(double width, double height) {
         return width * height;
     }
 
-    public double getPerimeter(double width, double height) {
+    public double getPerimeter() {
         return (width + height) * 2;
     }
 }
