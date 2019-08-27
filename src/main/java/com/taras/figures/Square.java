@@ -19,13 +19,4 @@ public class Square implements Figures {
         return width * 4;
     }
 
-    @Override
-    public double getSquare(double width, double height) {
-        return width * height;
-    }
-
-    @Override
-    public double getPerimeter(double width, double height) {
-        return  (width + height) * 2;
-    }
 }

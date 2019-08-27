@@ -12,17 +12,7 @@ public class Rectangle implements Figures{
         return 0;
     }
 
-    @Override
-    public double getSquare(double radius) {
-        return 0;
-    }
-
-    @Override
-    public double getPerimeter(double radius) {
-        return 0;
-    }
-
-    public double getSquare(double width, double height) {
+   public double getSquare(double width, double height) {
         return width * height;
     }
 

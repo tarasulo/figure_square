@@ -20,13 +20,4 @@ public class Circle implements Figures {
         return pi * 2 * radius;
     }
 
-    @Override
-    public double getSquare(double width, double height) {
-        return 0;
-    }
-
-    @Override
-    public double getPerimeter(double width, double height) {
-        return 0;
-    }
 }
