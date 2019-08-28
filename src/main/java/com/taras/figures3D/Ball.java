@@ -1,9 +1,13 @@
-package com.taras.figures;
+package com.taras.figures3D;
 
-public class Ball implements Figures3D {
+import com.taras.figures2D.Circle;
+import com.taras.figures3D.Figures3D;
+
+public class Ball extends Circle implements Figures3D {
     private double radius;
     //constructor
     public Ball(double radius) {
+        super(radius);
         this.radius = radius;
     }
 

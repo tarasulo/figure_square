@@ -1,9 +1,13 @@
-package com.taras.figures;
+package com.taras.figures3D;
 
-public class Cube implements Figures3D {
+import com.taras.figures2D.Square;
+import com.taras.figures3D.Figures3D;
+
+public class Cube extends Square implements Figures3D {
     private double width;
     //constructor
     public Cube(double width) {
+        super(width);
         this.width = width;
     }
     // calculate cubes capacity
