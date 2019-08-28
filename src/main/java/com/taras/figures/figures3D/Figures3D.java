@@ -1,4 +1,4 @@
-package com.taras.figures3D;
+package com.taras.figures.figures3D;
 
 import com.taras.figures.Figures;
 

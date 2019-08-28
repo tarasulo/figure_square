@@ -1,4 +1,4 @@
-package com.taras.figures2D;
+package com.taras.figures.figures2D;
 
 public class Square implements Figures2D {
     public double width;

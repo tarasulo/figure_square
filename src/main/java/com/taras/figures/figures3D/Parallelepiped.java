@@ -1,7 +1,6 @@
-package com.taras.figures3D;
+package com.taras.figures.figures3D;
 
-import com.taras.figures2D.Rectangle;
-import com.taras.figures3D.Figures3D;
+import com.taras.figures.figures2D.Rectangle;
 
 public class Parallelepiped extends Rectangle implements Figures3D {
     private double width;

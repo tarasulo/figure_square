@@ -1,7 +1,6 @@
-package com.taras.figures3D;
+package com.taras.figures.figures3D;
 
-import com.taras.figures2D.Square;
-import com.taras.figures3D.Figures3D;
+import com.taras.figures.figures2D.Square;
 
 public class Cube extends Square implements Figures3D {
     private double width;

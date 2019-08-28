@@ -1,13 +1,13 @@
 package com.taras.figures;
 
-import com.taras.figures2D.Circle;
-import com.taras.figures2D.Figures2D;
-import com.taras.figures2D.Rectangle;
-import com.taras.figures2D.Square;
-import com.taras.figures3D.Ball;
-import com.taras.figures3D.Cube;
-import com.taras.figures3D.Figures3D;
-import com.taras.figures3D.Parallelepiped;
+import com.taras.figures.figures2D.Circle;
+import com.taras.figures.figures2D.Figures2D;
+import com.taras.figures.figures2D.Rectangle;
+import com.taras.figures.figures2D.Square;
+import com.taras.figures.figures3D.Ball;
+import com.taras.figures.figures3D.Cube;
+import com.taras.figures.figures3D.Figures3D;
+import com.taras.figures.figures3D.Parallelepiped;
 
 import static java.lang.System.*;
 
