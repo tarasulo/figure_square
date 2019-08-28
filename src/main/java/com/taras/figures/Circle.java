@@ -1,19 +1,22 @@
 package com.taras.figures;
 
-public class Circle implements Figures {
-    public double radius = 4.5;
-    final double pi = 3.14159265359;
-
-    public Circle(double radius) {
+class Circle implements Figures2D {
+    private double radius;
+    //constructor
+    Circle(double radius) {
         this.radius = radius;
     }
-
+    //calculate circles square
     public double getSquare() {
-        return pi * radius * radius;
+        return Math.PI * radius * radius;
     }
-
+    //calculate circles perimeter
     public double getPerimeter() {
-        return pi * 2 * radius;
+        return Math.PI * 2 * radius;
     }
 
+    @Override
+    public void name() {
+        System.out.println("The Circle");
+    }
 }
