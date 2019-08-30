@@ -1,7 +1,7 @@
 package com.taras.figures.figures2D;
 
 public class Square implements Figures2D {
-    public double width;
+    private double width;
 
     /* constructor */
     public Square(double width) {
