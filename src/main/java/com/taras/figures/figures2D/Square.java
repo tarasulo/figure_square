@@ -17,7 +17,7 @@ public class Square implements Figures2D {
     }
 
     @Override
-    public void name() {
-        System.out.println("The Square");
+    public String name() {
+        return "The Square";
     }
 }

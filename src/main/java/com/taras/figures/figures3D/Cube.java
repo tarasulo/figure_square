@@ -15,7 +15,7 @@ public class Cube extends Square implements Figures3D {
     }
 
     /* Figures name */
-    public void name() {
-        System.out.println("The Сube");
+    public String name() {
+        return "The Сube";
     }
 }

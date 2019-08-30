@@ -16,7 +16,7 @@ public class Circle implements Figures2D {
     }
 
     @Override
-    public void name() {
-        System.out.println("The Circle");
+    public String name() {
+        return "The Circle";
     }
 }

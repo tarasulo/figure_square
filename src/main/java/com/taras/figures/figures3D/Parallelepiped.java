@@ -20,7 +20,7 @@ public class Parallelepiped extends Rectangle implements Figures3D {
     }
 
     /* Figures name */
-    public void name() {
-        System.out.println("The Parallelepiped");
+    public String name() {
+        return "The Parallelepiped";
     }
 }

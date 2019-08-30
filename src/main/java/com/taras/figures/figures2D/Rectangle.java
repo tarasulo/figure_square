@@ -19,7 +19,7 @@ public class Rectangle implements Figures2D {
     }
 
     @Override
-    public void name() {
-        System.out.println("The Rectangle");
+    public String name() {
+        return "The Rectangle";
     }
 }

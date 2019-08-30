@@ -16,7 +16,7 @@ public class Ball extends Circle implements Figures3D {
     }
 
     /* Figures name */
-    public void name() {
-        System.out.println("The BaLL");
+    public String name() {
+        return "The BaLL";
     }
 }
