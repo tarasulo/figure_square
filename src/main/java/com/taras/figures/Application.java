@@ -50,6 +50,7 @@ public class Application {
             }
         }
 
+
         Figures3D[] figures3D = new Figures3D[defaultCapacity];
         for (int i = 0; i < figures3D.length; i++) {
             Random randomGenerator = new Random();
