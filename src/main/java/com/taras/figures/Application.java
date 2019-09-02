@@ -22,9 +22,9 @@ import static java.lang.System.*;
 public class Application {
 
     public static void main(String[] args) throws IOException {
-        int defaultCapacity = 100;
-        String url1 = "C:\\Java\\project\\figure_square\\src\\main\\java\\result2D.txt";
-        String url2 = "C:\\Java\\project\\figure_square\\src\\main\\java\\result3D.txt";
+        String url1 = args[0];
+        String url2 = args[1];
+        int defaultCapacity = Integer.parseInt(args[2]);
         StringBuilder content2D = new StringBuilder("2D Figures \n");
         StringBuilder content3D = new StringBuilder("3D Figures \n");
 
@@ -49,7 +49,6 @@ public class Application {
                     break;
             }
         }
-
 
         Figures3D[] figures3D = new Figures3D[defaultCapacity];
         for (int i = 0; i < figures3D.length; i++) {
