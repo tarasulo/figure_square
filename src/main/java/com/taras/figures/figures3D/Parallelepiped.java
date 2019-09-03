@@ -2,6 +2,8 @@ package com.taras.figures.figures3D;
 
 import com.taras.figures.figures2D.Rectangle;
 
+import java.text.DecimalFormat;
+
 public class Parallelepiped extends Rectangle implements Figures3D {
     private double width;
     private double height;
@@ -26,6 +28,9 @@ public class Parallelepiped extends Rectangle implements Figures3D {
 
     @Override
     public String writeResultFigure3D() {
-        return this.name() + " " + width + " " + height + " " + length + " capacity=" + this.getCapacity() + "\n";
+        return this.name() + " " + new DecimalFormat("#0.00").format(width)
+                + " " + new DecimalFormat("#0.00").format(height) + " "
+                + new DecimalFormat("#0.00").format(length) + " capacity="
+                + new DecimalFormat("#0.00").format(this.getCapacity()) + "\n";
     }
 }

@@ -23,16 +23,21 @@ import static java.lang.System.*;
 public class Application {
 
     public static void main(String[] args) throws IOException {
+        if (args[0] == null || args[1] == null) {
+            out.println("Please, write url for results");
+        }
+        if (args[2] == null) {
+            out.println("Please, write default capacity");
+        }
         String url1 = args[0];
         String url2 = args[1];
         int defaultCapacity = Integer.parseInt(args[2]);
         Path path2D = Paths.get(url1);
         Path path3D = Paths.get(url2);
         try {
-            Path result1 = Files.createFile(path2D);
-            Path result2 = Files.createFile(path3D);
+            Files.createFile(path2D);
+            Files.createFile(path3D);
         } catch (IOException e) {
-            e.toString();
             out.println("File already created " + e);
         }
 
@@ -57,7 +62,6 @@ public class Application {
             try {
                 Files.write(path2D, data.getBytes(), StandardOpenOption.APPEND);
             } catch (IOException e) {
-                e.toString();
                 out.println("File doesn't answered " + e);
             }
 
@@ -87,7 +91,6 @@ public class Application {
             try {
                 Files.write(path3D, data.toString().getBytes(), StandardOpenOption.APPEND);
             } catch (IOException e) {
-                e.toString();
                 out.println("File doesn't answered " + e);
             }
         }

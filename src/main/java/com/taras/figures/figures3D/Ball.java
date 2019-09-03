@@ -2,6 +2,8 @@ package com.taras.figures.figures3D;
 
 import com.taras.figures.figures2D.Circle;
 
+import java.text.DecimalFormat;
+
 public class Ball extends Circle implements Figures3D {
     private double radius;
     //constructor
@@ -22,6 +24,7 @@ public class Ball extends Circle implements Figures3D {
 
     @Override
     public String writeResultFigure3D() {
-        return this.name() + " " + radius + " capacity=" + this.getCapacity() + "\n";
+        return this.name() + " " + new DecimalFormat("#0.00").format(radius) + " capacity="
+                + new DecimalFormat("#0.00").format(this.getCapacity()) + "\n";
     }
 }

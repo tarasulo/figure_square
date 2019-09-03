@@ -2,6 +2,8 @@ package com.taras.figures.figures3D;
 
 import com.taras.figures.figures2D.Square;
 
+import java.text.DecimalFormat;
+
 public class Cube extends Square implements Figures3D {
     private double width;
 
@@ -23,6 +25,7 @@ public class Cube extends Square implements Figures3D {
 
     @Override
     public String writeResultFigure3D() {
-        return this.name() + " " + width + " capacity=" + this.getCapacity() + "\n";
+        return this.name() + " " + new DecimalFormat("#0.00").format(width)
+                + " capacity=" + new DecimalFormat("#0.00").format(this.getCapacity()) + "\n";
     }
 }
