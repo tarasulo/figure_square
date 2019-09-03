@@ -4,11 +4,13 @@ import com.taras.figures.figures2D.Square;
 
 public class Cube extends Square implements Figures3D {
     private double width;
+
     //constructor
     public Cube(double width) {
         super(width);
         this.width = width;
     }
+
     // calculate cubes capacity
     public double getCapacity() {
         return Math.pow(width, 3);
@@ -16,6 +18,11 @@ public class Cube extends Square implements Figures3D {
 
     /* Figures name */
     public String name() {
-        return "The Сube";
+        return "cube";
+    }
+
+    @Override
+    public String writeResultFigure3D() {
+        return this.name() + " " + width + " capacity=" + this.getCapacity() + "\n";
     }
 }

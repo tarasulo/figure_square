@@ -1,5 +1,11 @@
 package com.taras.figures.figures2D;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import static java.lang.System.out;
+
 public class Square implements Figures2D {
     private double width;
 
@@ -18,6 +24,12 @@ public class Square implements Figures2D {
 
     @Override
     public String name() {
-        return "The Square";
+        return "square";
+    }
+
+    @Override
+    public String writeResultFigure2D() {
+        return this.name() + " " + width + " square=" + this.getSquare()
+                + " perimeter=" + this.getPerimeter() + "\n";
     }
 }

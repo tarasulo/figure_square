@@ -1,5 +1,11 @@
 package com.taras.figures.figures2D;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import static java.lang.System.out;
+
 public class Rectangle implements Figures2D {
     private double width;
     private double height;
@@ -20,6 +26,22 @@ public class Rectangle implements Figures2D {
 
     @Override
     public String name() {
-        return "The Rectangle";
+        return "rectangle";
+    }
+
+    @Override
+    public String writeResultFigure2D() {
+        return this.name() + " " + width + " " + height + " square=" + this.getSquare()
+                + " perimeter=" + this.getPerimeter() + "\n";
+    }
+
+    public void writeToFile(String data, Path path) {
+        try {
+            Path result = Files.createFile(path);
+            Files.write(path, data.getBytes());
+        } catch (IOException e) {
+            e.toString();
+            out.println("File already created " + e);
+        }
     }
 }

@@ -21,6 +21,11 @@ public class Parallelepiped extends Rectangle implements Figures3D {
 
     /* Figures name */
     public String name() {
-        return "The Parallelepiped";
+        return "parallelepiped";
+    }
+
+    @Override
+    public String writeResultFigure3D() {
+        return this.name() + " " + width + " " + height + " " + length + " capacity=" + this.getCapacity() + "\n";
     }
 }

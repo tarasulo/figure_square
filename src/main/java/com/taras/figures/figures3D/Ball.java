@@ -17,6 +17,11 @@ public class Ball extends Circle implements Figures3D {
 
     /* Figures name */
     public String name() {
-        return "The BaLL";
+        return "ball";
+    }
+
+    @Override
+    public String writeResultFigure3D() {
+        return this.name() + " " + radius + " capacity=" + this.getCapacity() + "\n";
     }
 }

@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,8 +26,15 @@ public class Application {
         String url1 = args[0];
         String url2 = args[1];
         int defaultCapacity = Integer.parseInt(args[2]);
-        StringBuilder content2D = new StringBuilder("2D Figures \n");
-        StringBuilder content3D = new StringBuilder("3D Figures \n");
+        Path path2D = Paths.get(url1);
+        Path path3D = Paths.get(url2);
+        try {
+            Path result1 = Files.createFile(path2D);
+            Path result2 = Files.createFile(path3D);
+        } catch (IOException e) {
+            e.toString();
+            out.println("File already created " + e);
+        }
 
         Figures2D[] figures2D = new Figures2D[defaultCapacity];
         for (int i = 0; i < figures2D.length; i++) {
@@ -34,80 +42,54 @@ public class Application {
             int rand = randomGenerator.nextInt(3) + 1;
             switch (rand) {
                 case 1:
-                    Figures2D square = new Square((random() * 100) + 1);
-                    figures2D[i] = square;
+                    figures2D[i] = new Square((random() * 100) + 1);
                     break;
                 case 2:
-                    Figures2D rectangle = new Rectangle((random() * 100) + 1, (random() * 100) + 1);
-                    figures2D[i] = rectangle;
+                    figures2D[i] = new Rectangle((random() * 100) + 1, (random() * 100) + 1);
                     break;
                 case 3:
-                    Figures2D circle = new Circle((random() * 100) + 1);
-                    figures2D[i] = circle;
+                    figures2D[i] = new Circle((random() * 100) + 1);
                     break;
                 default:
                     break;
             }
+            String data = figures2D[i].writeResultFigure2D();
+            try {
+                Files.write(path2D, data.getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.toString();
+                out.println("File doesn't answered " + e);
+            }
+
         }
 
         Figures3D[] figures3D = new Figures3D[defaultCapacity];
         for (int i = 0; i < figures3D.length; i++) {
+            double width = (random() * 100) + 1;
+            double height = (random() * 100) + 1;
+            double length = (random() * 100) + 1;
             Random randomGenerator = new Random();
             int rand = randomGenerator.nextInt(3) + 1;
             switch (rand) {
                 case 1:
-                    Figures3D cube = new Cube((random() * 100) + 1);
-                    figures3D[i] = cube;
+                    figures3D[i] = new Cube(width);
                     break;
                 case 2:
-                    Figures3D parallelepiped = new Parallelepiped((random() * 100) + 1,
-                            (random() * 100) + 1, (random() * 100) + 1);
-                    figures3D[i] = parallelepiped;
+                    figures3D[i] = new Parallelepiped(width, height, length);
                     break;
                 case 3:
-                    Figures3D ball = new Ball((random() * 100) + 1);
-                    figures3D[i] = ball;
+                    figures3D[i] = new Ball(width);
                     break;
                 default:
                     break;
             }
-        }
-
-        for (Figures2D figure : figures2D) {
-            content2D.append(figure.name())
-                    .append(" \n")
-                    .append("The square of figure: ")
-                    .append(figure.getSquare())
-                    .append(" \n")
-                    .append("The perimeter of figure: ")
-                    .append(figure.getPerimeter())
-                    .append(" \n");
-        }
-
-        for (Figures3D figure : figures3D) {
-            content3D.append(figure.name())
-                    .append(" \n")
-                    .append("The capacity of figure: ")
-                    .append(figure.getCapacity())
-                    .append(" \n");
-        }
-
-        Path path2D = Paths.get(url1);
-        try {
-            Path result = Files.createFile(path2D);
-            Files.write(path2D, content2D.toString().getBytes());
-        } catch (IOException e) {
-            e.toString();
-            out.println("File already created " + e);
-        }
-
-        Path path3D = Paths.get(url2);
-        try {
-            Path result = Files.createFile(path3D);
-            Files.write(path3D, content3D.toString().getBytes());
-        } catch (IOException e) {
-            e.toString();
-            out.println("File already created " + e);
+            String data = figures3D[i].writeResultFigure3D();
+            try {
+                Files.write(path3D, data.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.toString();
+                out.println("File doesn't answered " + e);
+            }
         }
 
     }
