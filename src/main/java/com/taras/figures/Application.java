@@ -22,18 +22,37 @@ import static java.lang.System.*;
 
 public class Application {
 
+    private static double randomParam() {
+        return random() * 100 + 1;
+    }
+
+    private static void writeToFile(Path path, String result) {
+        try {
+            Files.write(path, result.getBytes(), StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            out.println("File doesn't answered " + e);
+        }
+    }
+
+    private static int randomForSwitch() {
+        Random randomGenerator = new Random();
+        return randomGenerator.nextInt(3) + 1;
+    }
+
     public static void main(String[] args) throws IOException {
-        if (args[0] == null || args[1] == null) {
-            out.println("Please, write url for results");
+        if (args.length == 0) {
+            out.println("Please, write arguments: " +
+                    "1) file name with url for results of 2D figures " +
+                    "2) file name with url for results of 3D figures" +
+                    "3) default array capacity ");
+            return;
         }
-        if (args[2] == null) {
-            out.println("Please, write default capacity");
-        }
-        String url1 = args[0];
-        String url2 = args[1];
+
         int defaultCapacity = Integer.parseInt(args[2]);
-        Path path2D = Paths.get(url1);
-        Path path3D = Paths.get(url2);
+        Path path2D = Paths.get(args[0]);
+        Path path3D = Paths.get(args[1]);
+
+
         try {
             Files.createFile(path2D);
             Files.createFile(path3D);
@@ -43,57 +62,40 @@ public class Application {
 
         Figures2D[] figures2D = new Figures2D[defaultCapacity];
         for (int i = 0; i < figures2D.length; i++) {
-            Random randomGenerator = new Random();
-            int rand = randomGenerator.nextInt(3) + 1;
-            switch (rand) {
+            switch (randomForSwitch()) {
                 case 1:
-                    figures2D[i] = new Square((random() * 100) + 1);
+                    figures2D[i] = new Square(randomParam());
                     break;
                 case 2:
-                    figures2D[i] = new Rectangle((random() * 100) + 1, (random() * 100) + 1);
+                    figures2D[i] = new Rectangle(randomParam(), randomParam());
                     break;
                 case 3:
-                    figures2D[i] = new Circle((random() * 100) + 1);
+                    figures2D[i] = new Circle(randomParam());
                     break;
                 default:
                     break;
             }
             String data = figures2D[i].writeResultFigure2D();
-            try {
-                Files.write(path2D, data.getBytes(), StandardOpenOption.APPEND);
-            } catch (IOException e) {
-                out.println("File doesn't answered " + e);
-            }
-
+            writeToFile(path2D, data);
         }
 
         Figures3D[] figures3D = new Figures3D[defaultCapacity];
         for (int i = 0; i < figures3D.length; i++) {
-            double width = (random() * 100) + 1;
-            double height = (random() * 100) + 1;
-            double length = (random() * 100) + 1;
-            Random randomGenerator = new Random();
-            int rand = randomGenerator.nextInt(3) + 1;
-            switch (rand) {
+            switch (randomForSwitch()) {
                 case 1:
-                    figures3D[i] = new Cube(width);
+                    figures3D[i] = new Cube(randomParam());
                     break;
                 case 2:
-                    figures3D[i] = new Parallelepiped(width, height, length);
+                    figures3D[i] = new Parallelepiped(randomParam(), randomParam(), randomParam());
                     break;
                 case 3:
-                    figures3D[i] = new Ball(width);
+                    figures3D[i] = new Ball(randomParam());
                     break;
                 default:
                     break;
             }
             String data = figures3D[i].writeResultFigure3D();
-            try {
-                Files.write(path3D, data.toString().getBytes(), StandardOpenOption.APPEND);
-            } catch (IOException e) {
-                out.println("File doesn't answered " + e);
-            }
+            writeToFile(path3D, data);
         }
-
     }
 }
