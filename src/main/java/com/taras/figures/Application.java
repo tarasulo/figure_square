@@ -10,12 +10,16 @@ import com.taras.figures.figures3D.Figures3D;
 import com.taras.figures.figures3D.Parallelepiped;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 import static java.lang.Math.*;
 import static java.lang.System.*;
@@ -39,23 +43,52 @@ public class Application {
         return randomGenerator.nextInt(3) + 1;
     }
 
+    private static void writeFiguresToFile(Path path1, Path path2) {
+        try{
+            List contents = Files.readAllLines(path1);
+            //Read from the stream
+            for(Object content:contents){//for each line of content in contents
+                String line = content.toString();
+                String[] stringArray = line.split(" ");
+                String result = "";
+                if (stringArray[0].equals("rectangle")) {
+                    result += stringArray[0] + " " + stringArray[1] + " "
+                            + stringArray[2] + System.lineSeparator();
+                } else if (stringArray[0].equals("parallelepiped")) {
+                    result += stringArray[0] + " " + stringArray[1] + " "
+                            + stringArray[2] + " " + stringArray[3]
+                            + System.lineSeparator();
+                } else {
+                    result += stringArray[0] + " " + stringArray[1]
+                            + System.lineSeparator();
+                }
+                writeToFile(path2, result);
+            }
+        }catch (IOException ex){
+            out.println("File doesn't answered " + ex);
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
             out.println("Please, write arguments: " +
                     "1) file name with url for results of 2D figures " +
                     "2) file name with url for results of 3D figures" +
-                    "3) default array capacity ");
+                    "3) default array capacity " +
+                    "4) file name with url for figures args");
             return;
         }
 
         int defaultCapacity = Integer.parseInt(args[2]);
         Path path2D = Paths.get(args[0]);
         Path path3D = Paths.get(args[1]);
+        Path pathArgs = Paths.get(args[3]);
 
 
         try {
             Files.createFile(path2D);
             Files.createFile(path3D);
+            Files.createFile(pathArgs);
         } catch (IOException e) {
             out.println("File already created " + e);
         }
@@ -97,5 +130,8 @@ public class Application {
             String data = figures3D[i].writeResultFigure3D();
             writeToFile(path3D, data);
         }
+
+        writeFiguresToFile(path2D, pathArgs);
+        writeFiguresToFile(path3D, pathArgs);
     }
 }

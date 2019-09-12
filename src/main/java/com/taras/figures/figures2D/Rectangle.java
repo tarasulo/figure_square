@@ -35,6 +35,7 @@ public class Rectangle implements Figures2D {
         return this.name() + " " + new DecimalFormat("#0.00").format(width)
                 + " " + new DecimalFormat("#0.00").format(height) + " square="
                 + new DecimalFormat("#0.00").format(this.getSquare())
-                + " perimeter=" + new DecimalFormat("#0.00").format(this.getPerimeter()) + "\n";
+                + " perimeter=" + new DecimalFormat("#0.00").format(this.getPerimeter())
+                + System.lineSeparator();
     }
 }

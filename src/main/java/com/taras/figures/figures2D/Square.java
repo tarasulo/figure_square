@@ -32,6 +32,6 @@ public class Square implements Figures2D {
     public String writeResultFigure2D() {
         return this.name() + " " + new DecimalFormat("#0.00").format(width) + " square="
                 + new DecimalFormat("#0.00").format(this.getSquare()) + " perimeter="
-                + new DecimalFormat("#0.00").format(this.getPerimeter()) + "\n";
+                + new DecimalFormat("#0.00").format(this.getPerimeter()) + System.lineSeparator();
     }
 }
