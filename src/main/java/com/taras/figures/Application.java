@@ -69,6 +69,41 @@ public class Application {
         }
     }
 
+    private static void figureFactory(Figures figure, Path path, int marker) {
+        if (marker == 2) {
+            switch (randomForSwitch()) {
+                case 1:
+                    figure = new Square(randomParam());
+                    break;
+                case 2:
+                    figure = new Rectangle(randomParam(), randomParam());
+                    break;
+                case 3:
+                    figure = new Circle(randomParam());
+                    break;
+                default:
+                    break;
+            }
+        }
+        if (marker == 3){
+            switch (randomForSwitch()) {
+                case 1:
+                    figure = new Cube(randomParam());
+                    break;
+                case 2:
+                    figure = new Parallelepiped(randomParam(), randomParam(), randomParam());
+                    break;
+                case 3:
+                    figure = new Ball(randomParam());
+                    break;
+                default:
+                    break;
+            }
+        }
+        String data = figure.writeResultFigure();
+        writeToFile(path, data);
+    }
+
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
             out.println("Please, write arguments: " +
@@ -95,40 +130,12 @@ public class Application {
 
         Figures2D[] figures2D = new Figures2D[defaultCapacity];
         for (int i = 0; i < figures2D.length; i++) {
-            switch (randomForSwitch()) {
-                case 1:
-                    figures2D[i] = new Square(randomParam());
-                    break;
-                case 2:
-                    figures2D[i] = new Rectangle(randomParam(), randomParam());
-                    break;
-                case 3:
-                    figures2D[i] = new Circle(randomParam());
-                    break;
-                default:
-                    break;
-            }
-            String data = figures2D[i].writeResultFigure2D();
-            writeToFile(path2D, data);
+            figureFactory(figures2D[i], path2D, 2);
         }
 
         Figures3D[] figures3D = new Figures3D[defaultCapacity];
         for (int i = 0; i < figures3D.length; i++) {
-            switch (randomForSwitch()) {
-                case 1:
-                    figures3D[i] = new Cube(randomParam());
-                    break;
-                case 2:
-                    figures3D[i] = new Parallelepiped(randomParam(), randomParam(), randomParam());
-                    break;
-                case 3:
-                    figures3D[i] = new Ball(randomParam());
-                    break;
-                default:
-                    break;
-            }
-            String data = figures3D[i].writeResultFigure3D();
-            writeToFile(path3D, data);
+            figureFactory(figures3D[i], path3D, 3);
         }
 
         writeFiguresToFile(path2D, pathArgs);

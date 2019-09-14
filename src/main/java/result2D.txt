@@ -1,100 +1,100 @@
-circle 33,34 square=3493,06 perimeter=209,51
-circle 80,02 square=20114,75 perimeter=502,76
-rectangle 81,46 92,71 square=7551,83 perimeter=348,33
-rectangle 35,53 88,23 square=3134,74 perimeter=247,52
-square 94,20 square=8874,50 perimeter=376,82
-circle 54,57 square=9355,66 perimeter=342,88
-rectangle 94,02 68,49 square=6438,95 perimeter=325,01
-circle 89,37 square=25093,24 perimeter=561,54
-rectangle 89,39 34,98 square=3126,46 perimeter=248,73
-rectangle 2,36 44,32 square=104,78 perimeter=93,37
-circle 89,51 square=25167,92 perimeter=562,38
-square 34,91 square=1218,87 perimeter=139,65
-square 7,69 square=59,10 perimeter=30,75
-square 39,58 square=1566,48 perimeter=158,32
-square 73,15 square=5350,26 perimeter=292,58
-rectangle 82,21 67,87 square=5579,66 perimeter=300,16
-circle 88,17 square=24421,42 perimeter=553,98
-rectangle 56,00 33,98 square=1902,91 perimeter=179,96
-rectangle 15,11 80,32 square=1213,39 perimeter=190,85
-circle 79,18 square=19693,79 perimeter=497,47
-square 77,71 square=6038,28 perimeter=310,83
-square 57,43 square=3297,91 perimeter=229,71
-rectangle 68,50 33,82 square=2316,90 perimeter=204,65
-square 23,07 square=532,44 perimeter=92,30
-circle 81,73 square=20987,13 perimeter=513,55
-circle 66,54 square=13910,23 perimeter=418,09
-rectangle 9,97 56,43 square=562,38 perimeter=132,78
-circle 22,22 square=1551,21 perimeter=139,62
-square 26,28 square=690,75 perimeter=105,13
-rectangle 49,96 87,33 square=4362,44 perimeter=274,56
-rectangle 56,91 85,21 square=4849,42 perimeter=284,24
-rectangle 5,38 4,95 square=26,64 perimeter=20,66
-circle 83,70 square=22010,38 perimeter=525,92
-rectangle 49,52 80,35 square=3979,35 perimeter=259,75
-circle 40,47 square=5144,42 perimeter=254,26
-square 31,79 square=1010,79 perimeter=127,17
-rectangle 88,29 93,83 square=8284,23 perimeter=364,24
-rectangle 100,90 84,27 square=8502,51 perimeter=370,33
-square 66,65 square=4441,62 perimeter=266,58
-square 8,87 square=78,68 perimeter=35,48
-circle 99,85 square=31322,09 perimeter=627,38
-circle 23,39 square=1719,15 perimeter=146,98
-rectangle 38,41 57,84 square=2221,47 perimeter=192,49
-circle 60,81 square=11617,05 perimeter=382,08
-rectangle 61,36 52,01 square=3191,30 perimeter=226,74
-square 38,97 square=1518,56 perimeter=155,87
-circle 10,08 square=319,04 perimeter=63,32
-square 86,12 square=7416,61 perimeter=344,48
-square 97,38 square=9482,20 perimeter=389,51
-rectangle 72,09 7,91 square=570,55 perimeter=160,01
-circle 34,48 square=3734,48 perimeter=216,63
-circle 36,15 square=4104,58 perimeter=227,11
-circle 78,95 square=19582,24 perimeter=496,06
-square 88,98 square=7917,94 perimeter=355,93
-circle 2,81 square=24,87 perimeter=17,68
-square 12,55 square=157,46 perimeter=50,19
-rectangle 97,26 96,09 square=9345,36 perimeter=386,69
-circle 19,45 square=1188,58 perimeter=122,21
-square 38,31 square=1467,29 perimeter=153,22
-rectangle 46,41 94,86 square=4402,89 perimeter=282,55
-circle 32,20 square=3256,92 perimeter=202,31
-square 81,17 square=6588,30 perimeter=324,67
-circle 37,78 square=4483,83 perimeter=237,37
-rectangle 51,29 9,55 square=489,97 perimeter=121,69
-circle 63,85 square=12807,68 perimeter=401,18
-square 62,62 square=3921,35 perimeter=250,48
-circle 38,75 square=4717,88 perimeter=243,49
-square 14,71 square=216,44 perimeter=58,85
-square 97,74 square=9553,21 perimeter=390,96
-circle 96,74 square=29401,38 perimeter=607,84
-rectangle 16,88 87,81 square=1482,63 perimeter=209,39
-circle 34,12 square=3658,32 perimeter=214,41
-rectangle 32,51 90,56 square=2944,54 perimeter=246,15
-square 63,68 square=4055,03 perimeter=254,72
-square 14,52 square=210,91 perimeter=58,09
-circle 86,17 square=23328,20 perimeter=541,43
-rectangle 14,07 60,00 square=844,39 perimeter=148,15
-rectangle 41,34 31,04 square=1283,16 perimeter=144,76
-circle 52,95 square=8807,90 perimeter=332,69
-rectangle 93,76 70,21 square=6583,12 perimeter=327,95
-square 75,86 square=5754,02 perimeter=303,42
-square 53,87 square=2902,35 perimeter=215,49
-circle 22,81 square=1635,00 perimeter=143,34
-rectangle 46,10 41,50 square=1912,95 perimeter=175,19
-circle 1,70 square=9,10 perimeter=10,69
-square 63,65 square=4051,32 perimeter=254,60
-rectangle 66,90 88,91 square=5948,30 perimeter=311,62
-rectangle 61,90 6,56 square=405,96 perimeter=136,91
-circle 60,04 square=11323,07 perimeter=377,21
-rectangle 16,68 16,49 square=275,04 perimeter=66,34
-square 34,95 square=1221,75 perimeter=139,81
-rectangle 100,40 77,34 square=7764,44 perimeter=355,47
-square 2,27 square=5,16 perimeter=9,09
-rectangle 56,96 81,31 square=4631,58 perimeter=276,54
-square 58,36 square=3405,69 perimeter=233,43
-square 50,83 square=2583,56 perimeter=203,31
-rectangle 74,23 73,95 square=5489,15 perimeter=296,36
-square 35,72 square=1276,14 perimeter=142,89
-square 12,08 square=145,84 perimeter=48,31
-rectangle 45,43 75,39 square=3424,75 perimeter=241,63
+rectangle 92,61 49,50 square=4584,63 perimeter=284,23
+square 95,31 square=9084,61 perimeter=381,25
+rectangle 50,82 30,59 square=1554,59 perimeter=162,82
+rectangle 65,75 44,62 square=2933,70 perimeter=220,74
+circle 5,08 square=81,02 perimeter=31,91
+circle 63,07 square=12495,03 perimeter=396,25
+rectangle 7,83 18,47 square=144,60 perimeter=52,59
+circle 8,58 square=231,15 perimeter=53,89
+circle 85,31 square=22861,28 perimeter=535,99
+square 72,47 square=5251,34 perimeter=289,86
+rectangle 96,00 14,90 square=1430,41 perimeter=221,80
+rectangle 75,88 73,90 square=5608,09 perimeter=299,57
+square 98,57 square=9716,87 perimeter=394,30
+rectangle 31,72 19,32 square=612,82 perimeter=102,08
+square 33,28 square=1107,87 perimeter=133,14
+rectangle 69,83 63,10 square=4406,61 perimeter=265,87
+rectangle 79,00 79,67 square=6294,04 perimeter=317,34
+circle 36,75 square=4243,42 perimeter=230,92
+rectangle 73,37 19,67 square=1443,04 perimeter=186,08
+circle 86,49 square=23501,18 perimeter=543,44
+circle 3,79 square=45,06 perimeter=23,80
+circle 84,15 square=22244,76 perimeter=528,71
+rectangle 69,80 83,95 square=5859,59 perimeter=307,50
+circle 56,36 square=9979,88 perimeter=354,13
+circle 78,02 square=19124,98 perimeter=490,24
+rectangle 96,02 20,56 square=1974,62 perimeter=233,17
+rectangle 14,36 10,48 square=150,56 perimeter=49,69
+square 34,04 square=1158,47 perimeter=136,15
+circle 95,04 square=28374,63 perimeter=597,13
+rectangle 81,53 24,95 square=2034,40 perimeter=212,97
+square 83,48 square=6968,98 perimeter=333,92
+rectangle 43,51 82,50 square=3589,89 perimeter=252,03
+square 24,99 square=624,53 perimeter=99,96
+circle 27,85 square=2436,81 perimeter=174,99
+square 46,64 square=2175,25 perimeter=186,56
+rectangle 65,50 82,39 square=5397,08 perimeter=295,80
+circle 84,76 square=22568,58 perimeter=532,55
+rectangle 15,86 75,97 square=1205,18 perimeter=183,67
+rectangle 50,22 26,71 square=1341,43 perimeter=153,86
+rectangle 29,05 73,90 square=2146,49 perimeter=205,89
+rectangle 5,78 38,09 square=220,15 perimeter=87,74
+square 11,76 square=138,37 perimeter=47,05
+circle 76,02 square=18154,95 perimeter=477,64
+circle 70,17 square=15467,11 perimeter=440,87
+rectangle 90,11 2,51 square=226,40 perimeter=185,24
+circle 52,97 square=8815,24 perimeter=332,83
+circle 38,18 square=4578,87 perimeter=239,87
+rectangle 22,19 97,63 square=2166,77 perimeter=239,65
+square 100,99 square=10197,97 perimeter=403,94
+rectangle 5,20 15,83 square=82,26 perimeter=42,05
+rectangle 44,80 37,94 square=1699,79 perimeter=165,48
+rectangle 96,19 34,55 square=3323,03 perimeter=261,47
+circle 42,84 square=5765,30 perimeter=269,16
+rectangle 44,37 85,93 square=3813,15 perimeter=260,61
+rectangle 82,66 9,85 square=814,20 perimeter=185,02
+circle 81,45 square=20842,70 perimeter=511,78
+rectangle 49,45 4,44 square=219,69 perimeter=107,78
+square 1,84 square=3,37 perimeter=7,34
+rectangle 69,99 96,71 square=6769,30 perimeter=333,41
+rectangle 5,29 99,49 square=526,36 perimeter=209,56
+square 7,28 square=53,05 perimeter=29,13
+circle 26,99 square=2289,13 perimeter=169,61
+circle 27,00 square=2290,50 perimeter=169,66
+rectangle 32,21 31,73 square=1022,19 perimeter=127,89
+square 84,39 square=7121,16 perimeter=337,55
+square 50,30 square=2530,43 perimeter=201,21
+rectangle 75,21 19,35 square=1454,96 perimeter=189,11
+circle 8,66 square=235,64 perimeter=54,42
+circle 29,58 square=2748,69 perimeter=185,85
+square 38,13 square=1454,24 perimeter=152,54
+rectangle 10,55 53,11 square=560,50 perimeter=127,33
+circle 87,07 square=23818,49 perimeter=547,09
+rectangle 61,85 21,07 square=1302,94 perimeter=165,83
+circle 84,71 square=22541,16 perimeter=532,22
+circle 6,84 square=147,09 perimeter=42,99
+square 53,58 square=2870,92 perimeter=214,32
+rectangle 86,29 90,87 square=7841,62 perimeter=354,33
+rectangle 72,36 20,28 square=1467,56 perimeter=185,28
+rectangle 25,24 91,90 square=2319,22 perimeter=234,28
+circle 85,86 square=23158,42 perimeter=539,46
+rectangle 4,89 86,82 square=424,68 perimeter=183,43
+square 98,44 square=9690,39 perimeter=393,76
+circle 92,46 square=26858,42 perimeter=580,96
+rectangle 90,92 59,39 square=5399,62 perimeter=300,62
+rectangle 59,27 7,52 square=445,68 perimeter=133,59
+circle 17,02 square=910,35 perimeter=106,96
+circle 82,17 square=21211,52 perimeter=516,29
+circle 16,44 square=848,95 perimeter=103,29
+rectangle 11,77 35,09 square=412,86 perimeter=93,71
+rectangle 96,80 21,68 square=2098,35 perimeter=236,96
+rectangle 35,64 53,00 square=1889,17 perimeter=177,29
+rectangle 16,16 71,24 square=1151,28 perimeter=174,81
+rectangle 1,46 26,18 square=38,26 perimeter=55,27
+rectangle 68,20 84,45 square=5759,00 perimeter=305,29
+circle 30,07 square=2839,73 perimeter=188,90
+rectangle 1,01 93,19 square=93,84 perimeter=188,39
+circle 85,42 square=22921,45 perimeter=536,69
+circle 47,34 square=7039,98 perimeter=297,43
+circle 67,50 square=14314,38 perimeter=424,12
+square 34,19 square=1169,30 perimeter=136,78

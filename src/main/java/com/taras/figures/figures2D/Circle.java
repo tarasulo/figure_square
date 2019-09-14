@@ -28,7 +28,7 @@ public class Circle implements Figures2D {
     }
 
     @Override
-    public String writeResultFigure2D() {
+    public String writeResultFigure() {
         return this.name() + " " + new DecimalFormat("#0.00").format(radius) + " square="
                 + new DecimalFormat("#0.00").format(this.getSquare()) + " perimeter="
                 + new DecimalFormat("#0.00").format(this.getPerimeter())

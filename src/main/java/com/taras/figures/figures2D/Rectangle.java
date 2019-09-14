@@ -31,7 +31,7 @@ public class Rectangle implements Figures2D {
     }
 
     @Override
-    public String writeResultFigure2D() {
+    public String writeResultFigure() {
         return this.name() + " " + new DecimalFormat("#0.00").format(width)
                 + " " + new DecimalFormat("#0.00").format(height) + " square="
                 + new DecimalFormat("#0.00").format(this.getSquare())

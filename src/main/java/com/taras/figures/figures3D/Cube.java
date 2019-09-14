@@ -24,7 +24,7 @@ public class Cube extends Square implements Figures3D {
     }
 
     @Override
-    public String writeResultFigure3D() {
+    public String writeResultFigure() {
         return this.name() + " " + new DecimalFormat("#0.00").format(width)
                 + " capacity=" + new DecimalFormat("#0.00").format(this.getCapacity()) + "\n";
     }
